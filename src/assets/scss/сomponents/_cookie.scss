@@ -1,0 +1,60 @@
+.cookie {
+
+  position: fixed;
+  width: 100%;
+  padding: 37px 0;
+  bottom: 0;
+  background: $white-color-rgba-three;
+  box-shadow: 0 -2px 4px $black-color-rgba-nine;
+  z-index: 1000000000000000;
+  display: none;
+  align-items: center;
+  align-content: center;
+  font-size: 16px;
+  font-family: $arimo-family-regular;
+  color: $black-color-one;
+
+  @media only screen and (max-width: 991.98px) {
+    padding: 20px 0;
+  }
+
+  &__text {
+
+    @media only screen and (max-width: 991.98px) {
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+
+    a {
+
+      font-size: 16px;
+      font-family: $arimo-family-regular;
+      color: $gold-color-one;
+      text-decoration: underline;
+
+      &:hover {
+
+        text-decoration: none;
+
+      }
+
+    }
+
+  }
+
+  .cookie-button {
+
+    height: 48px;
+    padding: 0 2rem;
+
+  }
+
+  &_mb-1 {
+
+    @media only screen and (max-width: 340px) {
+      margin-bottom: 1rem;
+    }
+
+  }
+
+}

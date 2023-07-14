@@ -1,0 +1,48 @@
+form.footer-form.feedback-form.needs-validation(role="form" novalidate onsubmit="yaCounter53734501.reachGoal('client');return true;")
+  .form-row
+    .col-6.col-sm-6.col-md-6.col-lg-12.col-xl-6.mb-4
+      label(for="validationTooltipUsername") Ваше имя
+      input#validationTooltipUsername.form-control(type="text" placeholder="Как к Вам обратиться?" value="" required data-bind="footerForm.name")
+      .invalid-tooltip
+        | Пожалуста введите свое имя
+    .col-6.col-sm-6.col-md-6.col-lg-12.col-xl-6.mb-4
+      label(for="validationTooltipCity") Город подачи
+      input#validationTooltipCity.form-control(type="text" placeholder="Город подачи автомобиля" value="" required data-bind="footerForm.city")
+      .invalid-tooltip
+        | Пожалуста укажите город
+    .col-6.col-sm-6.col-md-6.col-lg-12.mb-4
+      label(for="validationTooltipAuto") Модель автомобиля
+      input#validationTooltipAuto.form-control(type="text" placeholder="Модель автомобиля" value="" required data-bind="footerForm.carModel")
+      .invalid-tooltip
+        | Пожалуста укажите модель автомобиля
+    .col-6.col-sm-6.col-md-6.col-lg-12.mb-4
+      label(for="validationPhone") Телефон
+      input#validationPhone.form-control(type="tel" placeholder="Телефон" value="" required data-bind="footerForm.phone")
+      .invalid-tooltip
+        | Пожалуста введите свой номер телефона
+    .col-md-12.mb-4
+      label(for="validationEmail") Username
+      input#validationEmail.form-control(type="email" placeholder="E-mail для отправки КП" required data-bind="footerForm.email")
+      .invalid-tooltip
+        | Пожалуста введите корректно свой email
+
+  .form-row.feedback-form__order-lit-2
+    .form-check.mb-5
+      input#invalidCheck.form-check-input.is-invalid(type="checkbox" role="checkbox" value="" required checked)
+      label.form-check-label.form-check-label__desctop(for="invalidCheck")
+        | Подтверждая отправку формы Я соглашаюсь на обработку персональных данных и с&nbsp;
+        a(href='https://static.rustransfer.org/docs/politika_konfidencialnosti.pdf' title='') политикой конфиденциальности
+      label.form-check-label.form-check-label__mobile(for="invalidCheck")
+        | Нажимая кнопку ПОЛУЧИТЬ РАСЧЕТ Вы соглашаетесь на обработку персональных данных и с&nbsp;
+        a(href='https://static.rustransfer.org/docs/politika_konfidencialnosti.pdf' target='_blank' title='') политикой конфиденциальности
+
+  button.button.button__xl_gold.visible.feedback-form__order-lit-1(
+    type="submit"
+    role='button'
+    onclick="roistatGoal.reach({leadName: 'Форма «СТАНЬТЕ САМЫМ ВАЖНЫМ КЛИЕНТОМ ДЛЯ НАШЕЙ КОМПАНИИ»', text: 'Форма «СТАНЬТЕ САМЫМ ВАЖНЫМ КЛИЕНТОМ ДЛЯ НАШЕЙ КОМПАНИИ»'})")
+    | Стать клиентом
+    include ../../../templates/mixins/svg-icon/arrow
+
+
+
+

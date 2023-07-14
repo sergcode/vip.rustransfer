@@ -1,0 +1,234 @@
+.events-service {
+
+  background: url("#{$way-img}/events-service/events-service-bg.jpg") no-repeat center / cover;
+  position: relative;
+  text-align: center;
+
+  @media only screen and (max-width: 767.98px) {
+    margin-top: -120px;
+  }
+
+  h2 {
+
+    @media only screen and (max-width: 400px) {
+      word-break: break-all;
+
+      br {
+
+        display: none;
+
+      }
+    }
+
+  }
+
+  &_title-one {
+
+    padding-top: 200px;
+
+    @media only screen and (max-width: 991.98px) {
+      padding-top: 250px;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+      padding-top: 220px;
+    }
+
+    br {
+
+      display: none;
+
+      @media only screen and (max-width: 500px) {
+        display: block;
+      }
+
+    }
+
+  }
+
+
+  &__subtitle {
+
+    color: $white-color-one;
+    font-size: 18px;
+    padding-bottom: 2rem;
+
+    @media only screen and (max-width: 479.98px) {
+      font-size: 14px;
+      padding-bottom: 4rem;
+    }
+
+  }
+
+  &__list {
+
+    padding-bottom: 3rem;
+
+    @media only screen and (max-width: 991.98px) {
+      flex-wrap: nowrap;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+      display: none;
+    }
+
+    ul {
+
+      text-align: left;
+      line-height: 2em;
+
+      &:nth-child(1) {
+
+        margin-right: 5rem;
+
+        @media only screen and (max-width: 991.98px) {
+          margin-right: 0;
+        }
+
+      }
+
+      li {
+
+        list-style-position: outside;
+        color: $gold-color-one;
+
+        span {
+
+          color: $white-color-one;
+          font-size: 16px;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .owl-carousel {
+
+    padding-bottom: 70px;
+
+    @media only screen and (max-width: 767.98px) {
+      padding-bottom: 50px;
+    }
+
+    &.owl-loaded {
+
+      @include flex-center-wrap();
+
+    }
+
+    @include owl-nav-slider(absolute, space-between, 100%, -1, -10%, -10%, none);
+
+  }
+
+  &__padding-none {
+
+    padding-right: 0;
+    padding-left: 0;
+
+  }
+
+  &__more-info {
+
+    padding-bottom: 200px;
+
+    article {
+
+      margin-bottom: 4rem;
+
+      figure {
+
+        display: flex;
+        padding-left: 7.3rem;
+
+        @media only screen and (max-width: 1569.98px) {
+          padding-left: 5.6rem;
+        }
+
+        @media only screen and (max-width: 1279.98px) {
+          padding-left: 4.5rem;
+        }
+
+        @media only screen and (max-width: 991.98px) {
+          padding-left: 0;
+        }
+
+        @media only screen and (max-width: 575.98px) {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        figcaption {
+
+          color: $white-color-one;
+          font-size: 16px;
+          line-height: 1.7em;
+          text-align: left;
+          display: block;
+
+          @media only screen and (max-width: 400px) {
+            text-align: center;
+          }
+
+          img {
+
+            width: 176px;
+            height: 176px;
+            display: block;
+            margin-right: 30px;
+            float: left;
+
+            @media only screen and (max-width: 400px) {
+              float: none;
+              margin-bottom: 2rem;
+              margin-right: auto;
+              margin-left: auto;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &_pt-4 {
+
+    padding-top: 4rem;
+
+  }
+
+  &_pb-1 {
+
+    padding-bottom: 1rem;
+
+  }
+
+  &_pb-3 {
+
+    padding-bottom: 3rem;
+
+  }
+
+  &_pb-4 {
+
+    padding-bottom: 4rem;
+
+  }
+
+  &__col-md-12 {
+
+    @media only screen and (max-width: 991.98px) {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+  }
+
+
+}

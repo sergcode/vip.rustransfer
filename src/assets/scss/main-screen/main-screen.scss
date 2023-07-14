@@ -1,0 +1,226 @@
+// arrow-down
+@-webkit-keyframes jump {
+  0% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+
+    transform: translate(-50%, 10px);
+
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+
+    transform: translate(-50%, 10px);
+
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+}
+
+
+.main-screen {
+
+  background: url('#{$way-img}/main-screen/bg_slider.jpg') no-repeat center / cover;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 0;
+
+  @media only screen and (max-width: 991.98px) {
+    padding-bottom: 90px;
+  }
+
+  &__title {
+
+    padding-top: 8rem;
+    padding-bottom: 56px;
+    color: $white-color-one;
+
+    @media only screen and (max-width: 991.98px) {
+      padding-top: 4rem;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+      text-align: center;
+    }
+
+
+    p {
+
+      font-size: 20px;
+
+      @media only screen and (max-width: 479.98px) {
+        font-size: 16px;
+      }
+
+      br {
+
+        @media only screen and (max-width: 767.98px) {
+          display: none;
+        }
+
+      }
+
+    }
+
+  }
+
+  .button__xl_gold {
+
+    @media only screen and (max-width: 767.98px) {
+      margin: auto;
+    }
+
+  }
+
+  &__arrow-down {
+
+    background: $white-color-one;
+    box-shadow: 0 4px 4px $black-color-rgba-five;
+    border-radius: 50%;
+    position: absolute;
+    @include flex-center-wrap();
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    top: 102%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: box-shadow .5s ease, transform .5s ease;
+    animation: jump 1.5s ease-in-out infinite;
+    visibility: hidden;
+
+    @media only screen and (max-width: 1279.98px) {
+      width: 50px;
+      height: 50px;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+      visibility: visible;
+      top: 113%;
+    }
+
+    @media only screen and (max-width: 575.98px) {
+      visibility: visible;
+      top: 114%;
+    }
+
+    @media only screen and (max-width: 479.98px) {
+      display: none;
+    }
+
+    .arrow-down {
+
+      position: absolute;
+      margin-top: 3px;
+
+      @media only screen and (max-width: 1279.98px) {
+        width: 15px;
+        height: 9px;
+      }
+
+      path {
+
+        fill: $gold-color-one;
+
+      }
+
+    }
+
+    &:hover {
+
+      box-shadow: 0 4px 12px $black-color-rgba-five;
+
+    }
+
+  }
+
+  &__car {
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -13%;
+    width: 100%;
+    text-align: right;
+    padding-left: 53%;
+    z-index: -1;
+
+    @media only screen and (max-width: 1569.98px) {
+      margin-bottom: -15%;
+      padding-left: 50%;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+      display: none;
+    }
+
+    img {
+
+      position: relative;
+      margin-right: -13%;
+      width: 100%;
+
+      @media only screen and (max-width: 1569.98px) {
+        margin-right: -20%;
+      }
+
+      @media only screen and (max-width: 1279.98px) {
+        margin-right: -25%;
+      }
+
+    }
+
+  }
+
+  &__phone {
+
+    display: none;
+    padding-bottom: 3rem;
+    text-align: center;
+
+    @media only screen and (max-width: 479.98px) {
+      display: block;
+    }
+
+    svg {
+
+      width: 12px;
+      height: 12px;
+      margin-right: 20px;
+
+    }
+
+    a {
+
+      font-size: 16px;
+      color: $white-color-one;
+      font-family: $arimo-family-regular;
+
+      @media only screen and (max-width: 479.98px) {
+        font-size: 20px;
+      }
+
+    }
+
+  }
+
+}

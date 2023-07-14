@@ -1,0 +1,242 @@
+include ../../templates/mixins/form/form
+- var imgStatic = "https://static.rustransfer.org/icon/";
+
+footer#footer.footer.footer__theme(role='contentinfo')
+  .container.container__customized_xl.container__customized_sm
+    .row.justify-content-between
+      .footer__smart_d-flex.footer__col.col.footer__d-flex.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+        a.footer__logo.footer__logo_mb-1-5(href='', title='Логотип Рустрансфер' role='link')
+          include ../../templates/mixins/footer/logo
+        .footer__copy
+          p
+            | &copy;&nbsp;
+            script.
+              var mdate = new Date(); document.write(mdate.getFullYear());
+            |, ООО &laquo;РусТрансфер&raquo;
+          p ИНН:&nbsp;2367007357
+          p КПП:&nbsp;236601001
+          p ОГРН:&nbsp;1192375006515
+        a.footer__political(href='https://static.rustransfer.org/docs/politika_konfidencialnosti.pdf' target='_blank' title='Политика конфиденциальности' role='link')
+          p Политика конфиденциальности
+        a.footer__political(href='https://static.rustransfer.org/docs/public-offer-rustransfer-ooo.pdf' target='_blank' title='Публичная оферта' role='link')
+          p Публичная оферта
+
+      .footer__col.col.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.4s')
+        p.footer__title Контакты
+        ul.footer__phone
+          li
+            a(href='tel:+78002004017' role='link' title='Сделать звонок') +7-800-200-4017
+            span Круглосуточно
+          li
+            a(href='tel:+78002004017' role='link' title='Сделать звонок') +7-495-128-3601
+            span Москва
+          li
+            a(href='tel:+78126037550' role='link' title='Сделать звонок') +7-812-603-7550
+            span Санкт-Петербург
+          li
+            a(href='tel:+78432070209' role='link' title='Сделать звонок') +7-843-207-0209
+            span Казань
+          li
+            a(href='tel:+78622792425' role='link' title='Сделать звонок') +7-862-279-2425
+            span Сочи
+          li
+            a(href='tel:+12023502717' role='link' title='Сделать звонок') +1-202-350-2717
+            span Вашингтон
+          li
+            a(href='tel:+7(923)500-82-82' role='link' title='Сделать звонок') +7(923)500-82-82
+            .w-100
+            a.messenger(href='whatsapp://send?phone=+79235008282' title='' target='_blank' role='link')
+              span
+                include ../../templates/mixins/footer/whatsapp
+            a.messenger(href='viber://chat?number=+79235008282' title='' target='_blank' role='link')
+              span
+                include ../../templates/mixins/footer/viber
+            a.messenger.messenger__no-event(title='')
+              span
+                include ../../templates/mixins/footer/telegram
+
+      .footer__center_xs.col.order-1.order-sm-1.order-md-1.order-lg-1.wow.fadeInRight(data-wow-delay='0.7s', data-wow-duration='0.4s')
+        p.footer__title.footer__title_sm Обратная связь
+        ul.footer__feedback
+          li
+            a(href='mailto:24@rustransfer.org' role='link')
+              span 24@rustransfer.org
+          li
+            a(href='mailto:a.kuleshov@rustransfer.org' role='link')
+              span
+                | Обратная связь с генеральным&nbsp;
+                br
+                | директором
+          li
+            a(href='mailto:org@rustransfer.org' role='link')
+              span
+                | Обращение к комплайнс-
+                br
+                | контролеру
+
+      .footer__center_xs.footer__col_lg.col.order-1.order-sm-1.order-md-2.order-lg-2.wow.fadeInRight(data-wow-delay='0.8s', data-wow-duration='0.4s')
+        .footer__row
+          .footer__stretch
+            .footer__subscribers.footer__subscribers_desctop
+              p.footer__title.footer__title_md Договора оферты:
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='http://moscow.megafon.ru/popups/oferta_m_payment.html' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'megafon.png' alt='Логотип Мегафон')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='https://www.yota.ru/downloads/forms/oferta_m_platezh.pdf' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'yota.png' alt='Логотип Yota')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='https://pay.mts.ru/webportal/terms-account/' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'mts.png' alt='Логотип MTS')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='http://moskva.beeline.ru/customers/products/mobile/services/details/mobilnyy-platezh/' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'beeline.jpg' alt='Логотип Beeline')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='https://market.tele2.ru/offer/' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'tele2.png' alt='Логотип Tele2')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='http://www.ribank.ru/images/doc/oferta_ESP_Mixplat.pdf' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'mixplat.jpg' alt='Логотип Mixplat')
+              div.footer__subscribers_mt-auto
+                | Комиссия с абонента — 0%
+
+          .footer__stretch.footer__stretch_wrap
+            .footer__networck.footer__networck_desctop
+              p.footer__title.footer__title_md Мы в соцсетях
+              a(href='https://vk.com/rustransfer2019' title='Перейти в группу Рустрансфер Вконтакте' target='_blank' role='link')
+                span
+                  include ../../templates/mixins/footer/vk
+              a(href='https://twitter.com/TransferRus' title='Перейти в группу Рустрансфер в Twitter' target='_blank' role='link')
+                span
+                  include ../../templates/mixins/footer/twiter
+              a(href='https://www.instagram.com/rustransfers/' title='Перейти в группу Рустрансфер в Instagram' target='_blank' role='link')
+                span
+                  include ../../templates/mixins/footer/instagram
+              a(href='https://www.facebook.com/rustransfers/?modal=admin_todo_tour' title='Перейти в группу Рустрансфер в Facebook' target='_blank' role='link')
+                span
+                  include ../../templates/mixins/footer/facebook
+
+            .footer__pay.footer__pay_desctop
+              p.footer__title.footer__title_md Принимаем к оплате
+              span
+                include ../../templates/mixins/footer/visa
+              span
+                include ../../templates/mixins/footer/mir
+              span
+                include ../../templates/mixins/footer/mastercard
+
+        .footer__stretch_flex-direction.footer__robocassa_md
+          p.footer__title.footer__title_md.footer__title_right Оплата услуг
+          script(type="text/javascript", src="https://auth.robokassa.ru/Merchant/PaymentForm/FormFLS.js?MerchantLogin=Rustransfer&InvoiceID=0&Culture=ru&Encoding=utf-8&Description=%D0%A3%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0&DefaultSum=100&SignatureValue=c42f4e25bb51b2db11841ad93200ebbe")
+      .footer__col_lg.footer__col.order-2.order-sm-2.order-md-2.order-lg-2.footer__robocassa_sm.wow.fadeInRight(data-wow-delay='0.8s', data-wow-duration='0.4s')
+        .footer__stretch.footer__stretch_flex-direction
+          p.footer__title.footer__title_md Оплата услуг
+          script(type="text/javascript", src="https://auth.robokassa.ru/Merchant/PaymentForm/FormFLS.js?MerchantLogin=Rustransfer&InvoiceID=0&Culture=ru&Encoding=utf-8&Description=%D0%A3%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0&DefaultSum=100&SignatureValue=c42f4e25bb51b2db11841ad93200ebbe")
+
+// Modal
+#modalSuccess.modal.modal_theme.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+  .modal-dialog.modal-dialog__width.modal-dialog-centered(role="document")
+    .modal-content.modal-sending-message
+      .modal-body
+        article
+          figure
+            include ../../templates/mixins/svg-icon/successfully
+            figcaption.modal-sending-message__title Спасибо!
+            figcaption.modal-sending-message__subtitle Ваша заявка отправлена!
+            figcaption.modal-sending-message__text-small Наш специалист свяжется с Вами в ближайшее время
+            figcaption
+              button.button.button__sm_gold(data-dismiss="modal") OK
+
+#modalFailure.modal.modal_theme.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+  .modal-dialog.modal-dialog__width.modal-dialog-centered(role="document")
+    .modal-content.modal-sending-message
+      .modal-body
+        article
+          figure
+            include ../../templates/mixins/svg-icon/unsuccessfully
+            figcaption.modal-sending-message__title Не удалось
+            figcaption.modal-sending-message__subtitle Отправить вашу заявку
+            figcaption.modal-sending-message__text-small Пожалуйста, попробуйте еще раз
+            button.button.button__sm_gold(data-dismiss="modal") OK
+
+
+.bg__menu(
+  data-toggle='collapse'
+  data-target='#navbarToggler'
+  aria-controls='navbarToggler'
+  aria-expanded='false'
+  aria-label='Toggle navigation'
+)
+
+// Modal Customer Retention
+#modalCustomerRetention.modal.fade.bd-example-modal-xl.customer-retention(tabindex="-1" role="dialog" aria-labelledby="customerRetention" aria-hidden="true")
+  .modal-dialog.modal-dialog-centered.modal-xl
+    .modal-content.customer-retention__wrapper
+      button.close(type="button" data-dismiss="modal" aria-label="Close")
+      .customer-retention__content
+        h2
+          span Получите бесплатную консультацию&nbsp;
+          br
+          | персонального менеджера
+        p
+          | Получите эффективное решение через наш многолетний опыт бронирования&nbsp;
+          br
+          | автомобилей премиального и бизнес класса для важных персон в любом городе&nbsp;
+          br
+          | России и за рубежом.
+        .customer-retention__form
+          +customer-retention
+
+.modal-backdrop.modal-backdrop_customer.fade.show
+
+script(src='../assets/js/bundle.js')
+
+// Yandex.Metrika counter
+script(type="text/javascript").
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  ym(53734501, "init", {
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true,
+    webvisor:true
+  });
+noscript
+  div
+    img(src="https://mc.yandex.ru/watch/53734501" style="position:absolute; left:-9999px;" alt="")
+// /Yandex.Metrika counter
+
+
+// BEGIN JIVOSITE CODE {literal}
+script(type="text/javascript").
+  (function(){ var widget_id = 'JIOvq57YL4';var d=document;var w=window;function l(){
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+    s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+    if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+    else{w.addEventListener('load',l,false);}}})();
+// {/literal} END JIVOSITE CODE
+
+
+//ZADARMA
+script(type="text/javascript").
+  var ZCallbackWidgetLinkId  = '1c9c9f34cd7555db1cabd432a65a3697';
+  var ZCallbackWidgetDomain  = 'my.zadarma.com';
+  (function(){
+    var lt = document.createElement('script');
+    lt.type ='text/javascript';
+    lt.charset = 'utf-8';
+    lt.async = true;
+    lt.src = 'https://' + ZCallbackWidgetDomain + '/callbackWidget/js/main.min.js';
+    var sc = document.getElementsByTagName('script')[0];
+    if (sc) sc.parentNode.insertBefore(lt, sc);
+    else document.documentElement.firstChild.appendChild(lt);
+  })();
+//END ZADARMA
+
+//ENVYBOX
+link(rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css")
+script(type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=3c7fdeea915b27d5071a78b5aa906a74" charset="UTF-8" async)
+//END ENVYBOX
+

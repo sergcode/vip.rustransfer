@@ -1,0 +1,178 @@
+.free-payment {
+
+  width: 100%;
+  background: url('#{$way-img}/form-pay/form-pay.jpg') no-repeat center / cover;
+  margin-top: -150px;
+  padding-top: 200px;
+  padding-bottom: 70px;
+  position: relative;
+
+  @media only screen and (max-width: 575.98px) {
+    background: url('#{$way-img}/form-pay/form-pay.jpg') no-repeat right 63% top 0 / cover;
+    padding-bottom: 30px;
+  }
+
+  @media only screen and (max-width: 479.98px) {
+    margin-top: 0;
+    padding-top: 30px;
+  }
+
+  .container {
+
+    z-index: 10;
+
+  }
+
+  &__wrapper {
+
+    flex: 0 0 52.33333%;
+    max-width: 52.33333%;
+
+    @media only screen and (max-width: 1279.98px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+  }
+
+  &__title {
+
+    color: $black-color-two;
+    padding-bottom: 1rem;
+    z-index: 10;
+
+    //@media only screen and (max-width: 1569.98px) {
+    //  padding-right: 20%;
+    //}
+
+    @media only screen and (max-width: 1279.98px) {
+      padding-right: 0;
+      text-align: center;
+    }
+
+  }
+
+  &__subtitle {
+
+    padding-bottom: 50px;
+    color: $grey-color-two;
+
+    @media only screen and (max-width: 1279.98px) {
+      padding-right: 0;
+      text-align: center;
+    }
+
+    a {
+
+      color: $gold-color-one;
+      text-decoration: underline;
+      font-family: $arimo-family-regular;
+      font-size: 16px;
+
+      &:hover {
+
+        text-decoration: none;
+
+      }
+
+    }
+
+  }
+
+  @include feedback-form(100px, $black-color-two);
+
+  form {
+
+    &.feedback-form {
+
+      .form-check {
+
+        @media only screen and (max-width: 991.98px) {
+
+          padding-right: 50%;
+
+        }
+
+        @media only screen and (max-width: 767.98px) {
+
+          padding-right: 0;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &__bg-car {
+
+    position: absolute;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    bottom: 0;
+    background: url("#{$way-img}/form-pay/4022a3cda4d6e75dcb7735783dd8bd2b.png") no-repeat center bottom / 100%;
+    z-index: 0;
+
+    @media only screen and (max-width: 1569.98px) {
+      background-size: 120%;
+      background-position: 15% 80%;
+    }
+
+    @media only screen and (max-width: 1199.98px) {
+      background-size: 130%;
+      background-position-y: 100%;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+      background-size: 700px;
+      background-position-y: 100%;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+}
+
+.form-pay {
+
+  @media only screen and (max-width: 1279.98px) {
+    padding-right: 50%;
+  }
+
+  @media only screen and (max-width: 991.98px) {
+    padding-right: 0;
+  }
+
+  .button__xl_gold {
+
+    @media only screen and (max-width: 1279.98px) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+      width: 100%;
+      max-width: 289px;
+    }
+
+    @media only screen and (max-width: 575.98px) {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    @media only screen and (max-width: 479.98px) {
+      max-width: 70%;
+      margin: 0 auto 1.5rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+      max-width: 100%;
+    }
+
+  }
+
+}

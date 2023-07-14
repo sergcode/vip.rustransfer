@@ -1,0 +1,324 @@
+.customer-retention {
+
+  display: block;
+  z-index: -1000;
+
+  &__wrapper {
+
+    padding: 64px 0 40px;
+    border-radius: 3px !important;
+    border: none !important;
+    box-shadow: 0 28px 59px $black-color-rgba-one, 0 40px 120px $black-color-rgba-nine;
+    position: relative;
+
+    .close {
+
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: 10px;
+      margin-top: 10px;
+      width: 20px;
+      height: 20px;
+      opacity: 1;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 100%;
+        background: $black-color-two;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(46deg);
+        transition: all .3s ease;
+
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 100%;
+        background: $black-color-two;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-46deg);
+        transition: all .3s ease;
+
+      }
+
+      &:hover {
+
+        &:before {
+
+          transform: translate(-50%, -50%) rotate(-46deg);
+          background: $gold-color-one;
+
+        }
+
+        &:after {
+
+          transform: translate(-50%, -50%) rotate(46deg);
+          background: $gold-color-one;
+
+        }
+
+
+      }
+
+    }
+
+  }
+
+  &__content {
+
+    h2 {
+
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 30px;
+      position: relative;
+      display: block;
+      line-height: 1.3em;
+      padding: 0;
+      color: $black-color-two;
+
+      @media only screen and (max-width: 1199.98px) {
+        font-size: 25px;
+      }
+
+      @media only screen and (max-width: 991.98px) {
+        font-size: 20px;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        padding: 0 20px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        font-size: 18px;
+        padding: 0 10px 0;
+      }
+
+      span {
+        color: $gold-color-one;
+        @media only screen and (max-width: 310px) {
+          display: block;
+        }
+
+      }
+
+      br {
+
+        @media only screen and (max-width: 310px) {
+        }
+
+      }
+
+    }
+
+    p {
+
+      padding-bottom: 50px;
+      text-align: center;
+
+      @media only screen and (max-width: 991.98px) {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        font-size: 16px;
+      }
+
+      br {
+
+        @media only screen and (max-width: 991.98px) {
+          display: none;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__input-container {
+    margin-bottom: 1rem;
+  }
+
+  &__form {
+
+    padding: 0 195px 20px;
+
+    @media only screen and (max-width: 1199.98px) {
+      padding: 0 130px 37px;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+      padding: 0 40px 0;
+    }
+
+    @media only screen and (max-width: 360px) {
+      padding: 0 12px 0;
+    }
+
+    .form-row {
+
+      padding-bottom: 1rem;
+
+      label {
+        display: none;
+      }
+
+      input {
+        border-radius: 3px;
+        border: 1px solid $grey-color-four;
+        padding: 1.8rem .75rem 1.8rem 1rem;
+        background-color: transparent;
+        color: $black-color-two;
+        font-size: 14px;
+      }
+
+      .invalid-tooltip {
+
+        width: 40%;
+
+        @media only screen and (max-width: 991.98px) {
+          width: 50%;
+        }
+
+        @media only screen and (max-width: 920px) {
+          transform: translate(0, -130px);
+          left: 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        &:before {
+
+          @media only screen and (max-width: 920px) {
+            display: none;
+          }
+
+        }
+
+
+      }
+
+    }
+
+    .was-validated {
+
+      .form-control:invalid ~ .invalid-tooltip {
+
+        @media only screen and (max-width: 920px) {
+          transform: translate(0, 35px);
+        }
+
+      }
+
+    }
+
+  }
+
+  .button__xl_gold {
+    visibility: visible;
+    max-width: 370px;
+    @media only screen and (max-width: 500px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 390px) {
+      font-size: 14px;
+    }
+    @media only screen and (max-width: 310px) {
+      padding: 0;
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .invalid-tooltip {
+
+    top: 50%;
+    transform: translate(-150%, -50%);
+    width: 85%;
+    text-align: right;
+    border-radius: 0;
+    line-height: 2em;
+    opacity: 0;
+    background: $red-rgba-three;
+    transition: all .3s ease;
+    display: block;
+    visibility: hidden;
+
+    &:before {
+
+      content: '';
+      display: block;
+      position: absolute;
+      margin-right: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: 18px solid transparent;
+      border-left: 18px solid $red-rgba-three;
+      border-bottom: 18px solid transparent;
+
+    }
+
+  }
+
+  .was-validated .form-control:invalid ~ .invalid-feedback,
+  .was-validated .form-control:invalid ~ .invalid-tooltip,
+  .form-control.is-invalid ~ .invalid-feedback,
+  .form-control.is-invalid ~ .invalid-tooltip {
+    opacity: 1;
+    transform: translate(-110%, -50%);
+    transition: all .5s ease;
+    visibility: visible;
+
+    &_delay_second {
+
+      transition-delay: .1s;
+
+    }
+
+    &_delay_last {
+
+      transition-delay: .2s;
+
+    }
+
+  }
+
+
+}
+
+.modal-backdrop.modal-backdrop_customer.fade.show {
+
+  display: block;
+  z-index: -10;
+  visibility: hidden;
+
+}
+
+.modal-xl {
+
+  @media only screen and (min-width: 1200px) {
+    max-width: 930px;
+  }
+
+}

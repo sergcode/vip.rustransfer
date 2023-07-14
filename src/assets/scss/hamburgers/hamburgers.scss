@@ -1,0 +1,108 @@
+//=================== HAMBURGERS LIBS ==============================//
+$hamburger-padding-x: 15px !default;
+$hamburger-padding-y: 15px !default;
+$hamburger-layer-width: 40px !default;
+$hamburger-layer-height: 4px !default;
+$hamburger-layer-spacing: 6px !default;
+$hamburger-layer-color: #000 !default;
+$hamburger-layer-border-radius: 4px !default;
+$hamburger-hover-opacity: 0.7 !default;
+$hamburger-active-layer-color: $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter: opacity(50%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+$hamburger-types: (
+        spin,
+        spring
+) !default;
+
+@import './base';
+
+@import "./spin";
+@import "./spring";
+
+//================= VIP TRANSFER STYLE ===========================//
+.hamburger {
+  padding: 15px 15px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  z-index: 10000000;
+  top: 5px;
+  position: absolute;
+  right: 0;
+  //margin-top: 10px;
+
+  @media only screen and (max-width: 500.98px) {
+    top: 5px;
+    position: absolute;
+  }
+
+  &.is-active {
+
+    position: fixed;
+    right: 0;
+    transition: all .3s ease-in-out;
+
+    //@media only screen and (max-width: 479.98px) {
+    //  margin-top: 10px;
+    //  padding: 10px 15px;
+    //}
+
+    .hamburger-inner {
+
+      &:before, &:after {
+
+        background-color: $black-color-two;
+
+      }
+    }
+  }
+
+  &:hover {
+
+    opacity: 1;
+
+  }
+}
+
+.hamburger-box {
+  display: flex;
+  width: 30px;
+  height: 25px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+
+  background-color: $white-color-one;
+  border-radius: 0;
+  height: 3px;
+  width: 100%;
+
+}
+
+.bg__menu {
+
+  top: 0;
+  left: 0;
+  background: $black-color-rgba-three;
+  background: rgba(0, 0, 0, 0.6);
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 100000;
+  opacity: 0;
+  transition: opacity .5s ease;
+
+  &.active {
+
+    width: 100%;
+    opacity: 1;
+
+  }
+}

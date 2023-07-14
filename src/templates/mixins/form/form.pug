@@ -1,0 +1,44 @@
+mixin customer-retention
+  .form.form_pr-0.style-form.mt-auto.clear
+    form#customerRetention.clear.form__theme.needs-validation(method='post' action='' role='form' novalidate name='customerRetention' onsubmit="yaCounter53734501.reachGoal('uderganie'); return true;")
+      fieldset
+        .form-row
+          .col-lg-12.col-xl-12.customer-retention__input-container
+            label(for="customerRetentionUsername")
+              | Введите Ваше имя
+            input#customerRetentionUsername.form-control(
+            type="text"
+            placeholder="Введите Ваше имя"
+            form='customerRetention'
+            autocomplete='off'
+            value=""
+            pattern='^[a-zA-ZА-Яа-яЁё ]+$'
+            title='Имя может содержать только буквы.'
+            name='username'
+            required=''
+            data-bind="retentionForm.name"
+            )
+            .invalid-tooltip
+              | Это обязательное поле
+
+          .col-lg-12.col-xl-12.customer-retention__input-container
+            label(for="customerRetentionEmail")
+              | Введите Ваш телефон или E-mail
+            input#customerRetentionEmail.form-control(
+            type="text"
+            placeholder="Введите Ваш телефон или E-mail"
+            value=""
+            name='email'
+            form='customerRetention'
+            autocomplete='off'
+            required=''
+            data-bind="retentionForm.email"
+            )
+            .invalid-tooltip.invalid-tooltip_delay_second
+              | Это обязательное поле
+
+      .button__wrapper.button__wrapper_visible
+        button.button.button__xl_gold.button.button__large_red.button__large_middle.button_center.mt-auto(type='submit' role='button' onclick="yaCounter53734501.reachGoal('uderganie'); return true;") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+          include ../../mixins/svg-icon/arrow
+
+

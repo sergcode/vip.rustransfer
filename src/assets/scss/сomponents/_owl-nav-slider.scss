@@ -1,0 +1,75 @@
+@mixin owl-nav-slider($position, $alignment, $width, $number, $mr-next, $ml-prev, $display) {
+
+  .owl-nav {
+
+    display: flex;
+    position: $position;
+    justify-content: $alignment;
+    width: $width;
+
+    @media only screen and (max-width: 991.98px) {
+      display: $display;
+    }
+
+    .owl-prev {
+
+      margin-right: 3rem;
+      margin-left: $ml-prev;
+      transition: all .3s ease;
+      transform: translateX(0);
+      width: 55px;
+      height: 55px;
+      border: 1px solid $gold-color-one;
+      border-radius: 50%;
+      @include flex-center-wrap();
+      justify-content: center;
+      z-index: $number;
+
+      img {
+
+        width: 25px;
+        height: 25px;
+
+      }
+
+      &:hover {
+
+        border-color: transparent;
+        background: $white-color-one;
+
+      }
+
+    }
+
+    .owl-next {
+
+      transition: all .3s ease;
+      transform: translateX(0);
+      width: 55px;
+      height: 55px;
+      border: 1px solid $gold-color-one;
+      border-radius: 50%;
+      @include flex-center-wrap();
+      justify-content: center;
+      z-index: $number;
+      margin-right: $mr-next;
+
+      img {
+
+        width: 25px;
+        height: 25px;
+
+      }
+
+      &:hover {
+
+        border-color: transparent;
+        background: $white-color-one;
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,187 @@
+@mixin feedback-form($textarea-height, $font-color) {
+
+  form.feedback-form {
+
+    .col-4 {
+
+      @media only screen and (max-width: 479.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+    }
+
+    .col-6 {
+
+      @media only screen and (max-width: 479.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+    }
+
+    label {
+
+      display: none;
+
+    }
+
+    input {
+
+      border-radius: 3px;
+      border: 1px solid $grey-color-four;
+      padding: 1.8rem .75rem 1.8rem 1rem;
+      background-color: transparent;
+      color: $font-color;
+      font-size: 14px;
+
+      &:focus, &:hover, &:active {
+
+        border-color: $gold-color-one;
+        box-shadow: none;
+        background-color: transparent;
+
+      }
+
+    }
+
+    textarea {
+
+      border-radius: 3px;
+      border: 1px solid $grey-color-four;
+      height: 100%;
+      min-height: $textarea-height;
+      padding: 1.8rem .75rem 1.8rem 1rem;
+      background-color: transparent;
+      color: $font-color;
+      font-size: 14px;
+
+      @media only screen and (max-width: 479.98px) {
+        height: 130px;
+      }
+
+      &:focus, &:hover, &:active {
+
+        border-color: $gold-color-one;
+        box-shadow: none;
+        background-color: transparent;
+
+      }
+
+    }
+
+
+
+    .jq-checkbox {
+
+      transition: all .5s ease;
+
+      &.checked {
+
+        background: $gold-color-one;
+
+        .jq-checkbox__div {
+
+          width: 15px;
+          height: 9px;
+          border-bottom: 2px solid $white-color-one;
+          border-left: 2px solid $white-color-one;
+          -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+
+        }
+
+      }
+
+    }
+
+    .form-check {
+
+      padding-left: 0;
+
+      @media only screen and (max-width: 479.98px) {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+
+    }
+
+    .form-check-input {
+
+      display: inline-block;
+      float: left;
+      margin-right: 1rem;
+      border: 1px solid $gold-color-one;
+      box-shadow: none;
+      background: transparent;
+      border-radius: 3px;
+      width: 22px;
+      height: 22px;
+
+      @media only screen and (max-width: 479.98px) {
+        display: none;
+      }
+
+    }
+
+    .form-check-label {
+
+      display: table;
+      color: $grey-color-two !important;
+      line-height: 1.5em;
+
+      &__desctop {
+
+        @media only screen and (max-width: 479.98px) {
+          display: none;
+        }
+
+      }
+
+      &__mobile {
+
+        display: none;
+
+        @media only screen and (max-width: 479.98px) {
+          display: block;
+          font-size: 12px;
+        }
+
+      }
+
+      a {
+
+        text-decoration: underline;
+        color: $grey-color-two;
+
+        &:hover {
+
+          text-decoration: none;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &__order-lit-1 {
+
+    @media only screen and (max-width: 479.98px) {
+      order: 1;
+    }
+
+  }
+
+  &__order-lit-2 {
+
+    @media only screen and (max-width: 479.98px) {
+      order: 2;
+    }
+
+  }
+
+
+}
+

@@ -1,0 +1,44 @@
+form.form-pay.feedback-form.needs-validation.wow.fadeInUp(role="form"  data-wow-delay='1.2s' data-wow-duration='0.4s' novalidate onsubmit="yaCounter53734501.reachGoal('raschet');return true;")
+  .form-row
+    .col-4.col-sm-4.col-md-4.col-lg-12.col-xl-4.mb-3
+      label(for="validationTooltipUsernamePay") Ваше имя
+      input#validationTooltipUsernamePay.form-control(type="text" placeholder="Ваше имя" value="" required data-bind="payForm.name")
+      .invalid-tooltip
+        | Пожалуйста введите свое имя
+    .col-4.col-sm-4.col-md-4.col-lg-6.col-xl-4.mb-3
+      label(for="validationTooltipPhone") Телефон
+      input#validationTooltipPhone.form-control(type="tel" placeholder="Телефон для связи с Вами" value="" required data-bind="payForm.phone")
+      .invalid-tooltip
+        | Пожалуйста введите свой номер телефона
+    .col-4.col-sm-4.col-md-4.col-lg-6.col-xl-4.mb-3
+      label(for="validationTooltipEmail") Email
+      input#validationTooltipEmail.form-control(type="email" placeholder="E-mail для отправки КП" required data-bind="payForm.email")
+      .invalid-tooltip
+        | Пожалуйста введите корректно свой email
+  .form-row
+    .col-md-12.mb-3
+      label(for="validationTooltipTextarea") Текст сообщения
+      textarea#validationTooltipTextarea.form-control(
+        placeholder="Опишите требования к оказанию услуг в свободной форме (сообщите дату, время, маршрут, количество персон, желаемый класс автомобиля)"
+        data-bind="payForm.description"
+      )
+
+  button.button.button__xl_gold.button__mb-2.wow.fadeInRight(
+    type="submit" role='button'
+    data-wow-delay='1.3s'
+    data-wow-duration='0.4s'
+    onclick="roistatGoal.reach({leadName: 'Форма «ОТПРАВЬТЕ ЗАПРОС НА РАСЧЕТ СТОИМОСТИ АРЕНДЫ АВТОМОБИЛЯ С ВОДИТЕЛЕМ»', text: 'Форма «ОТПРАВЬТЕ ЗАПРОС НА РАСЧЕТ СТОИМОСТИ АРЕНДЫ АВТОМОБИЛЯ С ВОДИТЕЛЕМ»'})")
+    | Получить расчет
+    include ../../../templates/mixins/svg-icon/arrow
+
+  .form-row
+    .form-check
+      input#invalidCheckPay.form-check-input.is-invalid(type="checkbox" role="checkbox" value="" required checked)
+      label.form-check-label.form-check-label__desctop(for="invalidCheckPay")
+        | Подтверждая отправку формы, я соглашаюсь на обработку персональных данных и с&nbsp;
+        a(href='https://static.rustransfer.org/docs/politika_konfidencialnosti.pdf' title='') политикой конфиденциальности
+      label.form-check-label.form-check-label__mobile(for="invalidCheckPay")
+        | Нажимая кнопку ПОЛУЧИТЬ РАСЧЕТ Вы соглашаетесь на обработку персональных данных и с&nbsp;
+        a(href='https://static.rustransfer.org/docs/politika_konfidencialnosti.pdf' title='') политикой конфиденциальности
+
+

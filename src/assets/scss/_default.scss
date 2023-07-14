@@ -1,0 +1,351 @@
+html {
+
+  &.modal-open {
+
+    overflow-y: hidden;
+    padding-right: 17px;
+
+    @media only screen and (max-width: 991.98px) {
+
+      padding-right: 1px;
+
+    }
+  }
+
+}
+
+body {
+
+
+  overflow-x: hidden !important;
+
+
+}
+
+
+.container {
+
+  &__setting {
+
+    &_xl {
+
+      position: relative;
+
+      &_media-padding {
+
+        @media only screen and (max-width: 1600px) {
+          padding-left: 160px;
+          padding-right: 160px;
+        }
+
+      }
+
+      @media only screen and (min-width: 768px) {
+        max-width: 670px;
+      }
+
+      @media only screen and (min-width: 992px) {
+        max-width: 960px;
+      }
+
+      @media only screen and (min-width: 1200px) {
+        max-width: 1036px;
+      }
+
+      @media only screen and (min-width: 1280px) {
+        max-width: 1250px;
+      }
+
+      @media only screen and (min-width: 1570px) {
+        max-width: 1570px;
+      }
+
+
+
+    }
+
+    &_lg {
+
+      @media only screen and (max-width: 991.98px) {
+        max-width: 738px;
+      }
+
+    }
+
+    &_fluid {
+
+      @media only screen and (max-width: 991.98px) {
+        max-width: 100%;
+      }
+
+
+    }
+
+    &_padding {
+
+      @media only screen and (min-width: 1570px) {
+        padding-left: 160px;
+        padding-right: 160px;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+.justify-content-xl-between {
+
+  @media only screen and (max-width: 1279.98px) {
+    justify-content: space-around !important;
+  }
+
+}
+
+a {
+
+  font-family: $arimo-family-regular;
+  font-size: 14px;
+
+}
+
+h1 {
+
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+
+  span {
+
+    color: $gold-color-one;
+
+  }
+
+  @media only screen and (max-width: 1279.98px) {
+    font-size: 36px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 767.98px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 575.98px) {
+    font-size: 28px;
+  }
+
+  @media only screen and (max-width: 479.98px) {
+    font-size: 25px;
+  }
+
+  @media only screen and (max-width: 400.98px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 331.98px) {
+    font-size: 18px;
+  }
+
+
+}
+
+h2 {
+
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: $arimo-family-bold;
+  line-height: 1.5em;
+  color: $white-color-one;
+
+  span {
+
+    color: $gold-color-one;
+
+  }
+
+  @media only screen and (max-width: 1279.98px) {
+    font-size: 24px;
+  }
+
+  @media only screen and (max-width: 479.98px) {
+    font-size: 18px;
+  }
+
+
+}
+
+h3 {
+
+  font-size: 18px;
+  font-family: $roboto-family-medium;
+  line-height: 1.5em;
+
+}
+
+
+
+p {
+
+  margin-bottom: 0;
+  font-family: $arimo-family-regular;
+
+}
+
+input:active,
+input:focus,
+button:active,
+button:focus,
+a:active,
+a:focus {
+  outline: none;
+}
+
+img, a {
+  border: none;
+}
+
+
+.main {
+
+  width: 100%;
+  position: relative;
+  visibility: hidden;
+  overflow-x: hidden !important;
+
+  @media only screen and (max-width: 991.98px) {
+    visibility: visible;
+  }
+}
+
+
+::-webkit-input-placeholder { /* Chrome */
+  color: $grey-color-two;
+  font-size: 14px;
+  @media only screen and (max-width: 1569.98px) {
+    font-size: 12px;
+  }
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $grey-color-two;
+  font-size: 14px;
+  @media only screen and (max-width: 1569.98px) {
+    font-size: 12px;
+  }
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $grey-color-two;
+  font-size: 14px;
+  @media only screen and (max-width: 1569.98px) {
+    font-size: 12px;
+  }
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: $grey-color-two;
+  font-size: 14px;
+  @media only screen and (max-width: 1569.98px) {
+    font-size: 12px;
+  }
+}
+
+form {
+
+  input, textarea, label {
+
+    font-family: $verdana-regular;
+    font-size: 14px;
+
+    a {
+
+      font-family: $verdana-regular;
+      font-size: 14px;
+
+    }
+
+  }
+
+}
+
+.modal_theme {
+  padding-right: 0 !important;
+}
+
+.label_39 {
+
+  z-index: 1000 !important;
+
+}
+//zadarma
+.z-widget-simple-btn {
+
+  z-index: 1000 !important;
+  right: 20px !important;
+
+}
+
+.z-widget-sidebar {
+
+  z-index: 10000000000000000 !important;
+  overflow-x: hidden !important;
+
+  @media (max-width: 460px) {
+    width: 100vw !important;
+
+  }
+
+  .z-widget-sidebar-content {
+
+    position: relative !important;
+    width: 100% !important;
+
+  }
+
+  .z-widget-sidebar-header {
+
+    width: 100% !important;
+    position: relative !important;
+
+  }
+
+  .z-widget-sidebar-callback {
+
+    width: 100% !important;
+    position: relative !important;
+
+  }
+
+}
+
+//jivosite
+._show_1e.wrap_mW {
+
+  z-index: 1000 !important;
+
+}
+
+.main_2l {
+
+  z-index: 214748;
+
+}
+
+//kviz
+.ws-quiz .ws-quiz-modal-wrap {
+
+  z-index: 10000000000000000 !important;
+
+}
+
+a:not([href]):not([tabindex]) {
+  color: $white-color-one;
+  cursor: pointer;
+  &:hover {
+    color: $white-color-one;
+  }
+}

@@ -1,0 +1,49 @@
+.wrapper {
+
+  &__theme {
+
+  }
+
+  &__line {
+
+    @include flex-center-wrap();
+
+    &:before {
+
+      content: '';
+      display: block;
+      position: absolute;
+      margin-right: auto;
+      border-top: 1px solid #DE0000;
+      left: 0;
+
+    }
+
+    &_left {
+
+      &:before {
+
+        margin-right: auto;
+        width: 35%;
+        left: 0;
+
+      }
+
+    }
+
+  }
+
+  &__title {
+
+    color: $black-color-two;
+
+    &_center {
+
+      text-align: center;
+      justify-content: center;
+
+    }
+
+  }
+
+}

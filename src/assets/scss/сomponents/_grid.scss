@@ -1,0 +1,79 @@
+.container {
+
+  &__customized {
+
+    &_lg {
+
+      @media only screen and (min-width: 1570px) {
+        max-width: 1304px;
+      }
+
+    }
+
+    &_xl {
+
+      max-width: 1570px;
+
+      @media only screen and (max-width: 1640px) {
+        max-width: 1250px;
+      }
+      @media only screen and (max-width: 1280px) {
+        max-width: 1020px;
+      }
+      @media only screen and (max-width: 1024px) {
+        max-width: 908px;
+      }
+      @media only screen and (max-width: 992px) {
+        max-width: 738px;
+      }
+      @media only screen and (max-width: 768px) {
+        max-width: 576px;
+      }
+      @media only screen and (max-width: 576px) {
+        max-width: 470px;
+      }
+      @media only screen and (max-width: 480px) {
+        max-width: 300px;
+      }
+
+    }
+
+    &_md {
+
+      @media only screen and (max-width: 992px) {
+        max-width: 764px;
+      }
+
+    }
+
+    &_sm {
+
+      @media only screen and (max-width: 992px) {
+        max-width: 610px;
+      }
+
+    }
+
+    &_xs {
+
+      @media only screen and (max-width: 480px) {
+        max-width: 100%;
+      }
+
+    }
+
+    &_relative {
+
+      position: relative;
+
+    }
+
+    &_height-100 {
+
+      height: 100%;
+
+    }
+
+  }
+
+}

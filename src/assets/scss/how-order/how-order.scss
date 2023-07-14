@@ -1,0 +1,246 @@
+
+@-webkit-keyframes pendulum-prev {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes pendulum-prev {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes pendulum-next {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes pendulum-next {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.how-order {
+
+  position: relative;
+  width: 100%;
+  background: url("#{$way-img}/how-order/background.png")no-repeat center / cover;
+  padding: 169px 0 229px 3rem;
+
+  @media only screen and (max-width: 767.98px) {
+    padding: 169px 0 180px 0;
+    background: url("#{$way-img}/how-order/background.png")no-repeat right 88% bottom 0/ cover;
+  }
+
+  @media only screen and (max-width: 575.98px) {
+    padding: 169px 0 150px 0;
+  }
+
+  @media only screen and (max-width: 479.98px) {
+    padding: 130px 0 150px 0;
+    background: url("#{$way-img}/how-order/background.png")no-repeat right 74% bottom 0/ cover;
+    margin-top: -70px;
+  }
+
+  &:before {
+
+    content: '';
+    display: none;
+    top: 0;
+    left: 0;
+    background: $black-color-rgba-seven;
+    position: absolute;
+    width: 93%;
+    height: 100%;
+    transform: translateY(27px) rotate(86.5deg);
+
+    @media only screen and (max-width: 767.98px) {
+      display: block;
+    }
+  }
+
+  &__wrapper {
+
+    flex: 0 0 50.33333%;
+    max-width: 50.33333%;
+    margin-left: auto;
+    padding-right: 20%;
+
+    @media only screen and (max-width: 1569.98px) {
+      padding-right: 7%;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+      flex: 0 0 65%;
+      max-width: 65%;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: 479.98px) {
+      padding-right: 0;
+    }
+
+    h2 {
+
+      padding-bottom: 3rem;
+
+    }
+
+  }
+
+  &__slide-wrapper {
+
+    display: flex;
+    color: $gold-color-one;
+    padding-bottom: 2rem;
+
+    @media only screen and (max-width: 1023.98px) {
+      padding-bottom: 0;
+    }
+
+    @media only screen and (max-width: 479.98px) {
+      flex-wrap: wrap;
+    }
+
+  }
+
+  &__number {
+
+    font-family: $arial-family-black;
+    font-size: 48px;
+    line-height: 1em;
+    padding-right: 3rem;
+
+    @media only screen and (max-width: 479.98px) {
+      padding-bottom: 1rem;
+    }
+
+  }
+
+  &__slider-text {
+
+    color: $white-color-one;
+
+    h3 {
+
+      font-size: 24px;
+      padding-bottom: 1rem;
+      font-family: $arial-family-black;
+
+      @media only screen and (max-width: 575.98px) {
+        font-size: 20px;
+      }
+
+    }
+
+    p {
+
+      font-family: $arimo-family-regular;
+      font-size: 18px;
+      line-height: 1.8em;
+
+      @media only screen and (max-width: 479.98px) {
+        font-size: 16px;
+      }
+
+    }
+
+  }
+
+  &__owl-carousel {
+
+    padding-bottom: 4rem;
+
+    @media only screen and (max-width: 575.98px) {
+      padding-bottom: 2rem;
+    }
+
+  }
+
+  .owl-nav {
+
+    display: flex;
+    padding-left: calc(100%/4);
+
+    @media only screen and (max-width: 575.98px) {
+      padding-top: 3rem;
+    }
+
+    @media only screen and (max-width: 479.98px) {
+      padding-left: 0;
+    }
+
+    .owl-prev {
+
+      margin-right: 3rem;
+      transition: all .3s ease;
+      transform: translateX(0);
+
+      &:hover {
+
+        filter: brightness(200%);
+        animation: pendulum-prev .8s ease-in-out infinite;
+
+      }
+
+    }
+
+    .owl-next {
+
+      transition: all .3s ease;
+      transform: translateX(0);
+
+      &:hover {
+
+        filter: brightness(200%);
+        animation: pendulum-next .8s ease-in-out infinite;
+
+      }
+
+    }
+
+  }
+
+
+
+}
+

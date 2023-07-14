@@ -1,0 +1,50 @@
+/* default styles */
+@import 'variables';
+@import './mixins/mixins';
+@import 'fonts';
+@import './font-awesome-4.7.0/font-awesome';
+@import 'color-theme';
+@import 'theme';
+@import 'default';
+@import './hamburgers/hamburgers';
+
+/* components Rustransfer VIP*/
+@import './сomponents/button';
+@import './сomponents/arrow';
+@import './сomponents/numbers-block';
+@import './сomponents/auto-class';
+@import './сomponents/owl-nav-slider';
+@import './сomponents/feedback-form';
+@import './сomponents/grid';
+/* cookie */
+@import './сomponents/cookie';
+
+/* jquery.form.styler */
+@import './jquery-form-styler/jquery.formstyler';
+@import './jquery-form-styler/jquery.formstyler.theme';
+
+/* customer retention */
+@import './customer-retention/customer-retention';
+
+/* header styles */
+@import './header/header';
+
+/* main style */
+@import './main-screen/main-screen';
+@import './wrapper/wrapper';
+@import './zadarma/zadarma';
+@import './advantages/advantages';
+@import './auto-class/auto-class';
+@import './how-order/how-order';
+@import './order-service/order-service';
+@import './slider-advantages/slider-advantages';
+@import './free-payment/free-payment';
+@import './events-service/events-service';
+@import './numbers-company/numbers-company';
+@import './before-footer/before-footer';
+
+/* footer styles */
+@import './footer/footer';
+
+
+

@@ -1,0 +1,93 @@
+@mixin flex-center-wrap {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+}
+
+@mixin flex-end-wrap {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+
+}
+
+@mixin flex-stretch-wrap {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+
+}
+
+@mixin flex-start-wrap {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+
+}
+
+@mixin flex-center-wrap-column {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+@mixin flex-center-nowrap {
+
+  display: flex;
+  align-content: center;
+  align-items: center;
+
+}
+
+@mixin flex-wrap {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+@mixin flex-nowrap {
+
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+@mixin inline-flex-center-wrap {
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+}
+
+@mixin hover-line-gradient-rl {
+
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(222,0,0,0.73) 43%, rgba(222,0,0,1) 99%, rgba(222,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(222,0,0,0.73) 43%,rgba(222,0,0,1) 99%,rgba(222,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(222,0,0,0.73) 43%,rgba(222,0,0,1) 99%,rgba(222,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#de0000',GradientType=1 ); /* IE6-9 */
+
+}
+
+@mixin hover-line-gradient-lr {
+
+  background: -moz-linear-gradient(left, rgba(222,0,0,1) 0%, rgba(222,0,0,1) 1%, rgba(222,0,0,0.73) 57%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(222,0,0,1) 0%,rgba(222,0,0,1) 1%,rgba(222,0,0,0.73) 57%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(222,0,0,1) 0%,rgba(222,0,0,1) 1%,rgba(222,0,0,0.73) 57%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de0000', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+}

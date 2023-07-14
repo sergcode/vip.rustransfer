@@ -1,0 +1,149 @@
+.the-arrow {
+
+  width: 40px;
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+
+  &__position {
+
+    position: relative;
+    margin: 0 0 0 20px;
+    right: auto;
+
+  }
+
+  > .arrow-right {
+
+    background-color: $blue-color-one;
+    display: block;
+    height: 1px;
+    position: relative;
+    transition: all 0.5s;
+    will-change: transform;
+    border-radius: 10px;
+
+    &::before, &::after {
+
+      background-color: $blue-color-one;
+      content: '';
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.2s;
+      transition-delay: 0s;
+      border-radius: 10px;
+
+    }
+
+    &::before {
+
+      transform-origin: top right;
+
+    }
+
+
+    &::after {
+
+      transform-origin: bottom right;
+
+    }
+
+    &__white {
+
+      background-color: $white-color-one;
+
+      &::before, &::after {
+
+        background-color: $white-color-one;
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.2s;
+        transition-delay: 0s;
+        border-radius: 10px;
+
+      }
+
+    }
+
+  }
+
+  > .shaft {
+    background-color: $white-color-one;
+    display: block;
+    height: 1px;
+    position: relative;
+    transition: all 0.5s;
+    will-change: transform;
+    border-radius: 10px;
+
+    &::before, &::after {
+
+      background-color: $white-color-one;
+      content: '';
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.2s;
+      transition-delay: 0s;
+      border-radius: 10px;
+
+    }
+
+    &::before {
+
+      transform-origin: top right;
+
+    }
+
+
+    &::after {
+
+      transform-origin: bottom right;
+
+    }
+
+  }
+
+  &.-right {
+
+    z-index: 1000;
+
+    > .shaft, .arrow-right {
+
+      width: 20px;
+
+      &::before, &::after {
+
+        width: 7px;
+        transition: all 0.5s;
+
+      }
+
+      &::before {
+
+        transform: rotate(40deg);
+
+      }
+
+      &::after {
+
+        transform: rotate(-40deg);
+
+      }
+
+    }
+
+  }
+
+}
